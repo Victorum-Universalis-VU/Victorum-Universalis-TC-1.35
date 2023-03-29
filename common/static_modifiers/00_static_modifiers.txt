@@ -1402,13 +1402,14 @@ new_world_exploitation_modifier = {
 }
 
 crown_colony_overlord = {
-	merchants = 2							#VU increase from 1
+	merchants = 1
 	global_trade_power = 0.075				#VU increase from 0.05
 	naval_forcelimit = 2					#VU increase from 2
 	land_forcelimit = 2						#VU increase from 2
 }
 
 private_enterprise_overlord = {
+	merchants = 2							#Added in VU
 	global_tariffs = -0.025         		#Added in VU and decreased from 0.05
 	global_trade_power = 0.025      		#Added in VU and decreased from 0.05
 	naval_forcelimit = 1            		#Added in VU
@@ -1416,10 +1417,9 @@ private_enterprise_overlord = {
 }
 
 self_governing_colony_overlord = {
-	global_tariffs = -0.05					#-5% per every existing self-governing colony
 	merchants = 1
+	global_tariffs = -0.05					#-5% per every existing self-governing colony
 	global_trade_power = 0.05
-	global_tariffs = -0.10
 }
 
 #VU - Addition by San Felipe
@@ -1429,20 +1429,20 @@ self_governing_colony_overlord = {
 #}
 
 crown_colony_subject = {
-	colonists = 1                   		#Added in VU - The idea here is that once a colony is large enough, people then venture out to claim and settle new land.
+	liberty_desire = -25					#Added in VU - Crown Colonies rely a lot on their overlords.
 	global_autonomy = -0.05
-	global_colonial_growth = 25				#Increased from 10 so small colonies grow faster
+	global_trade_goods_size_modifier = 0.25	#Added in VU, increased from 0.2 - Crown Colonies are colonies that heavily focus on production.
 }
 
 private_enterprise_subject = {
-	global_ship_trade_power = 0.2
-	global_trade_goods_size_modifier = 0.2
+	merchants = 1							#Added in VU - Private Enterprises are colonies that heavily focus on trade.
+	global_ship_trade_power = 0.25			#Increased from 0.2
 	naval_tradition_from_trade = 0.1
 	ship_power_propagation = 0.1
 }
 
 self_governing_colony_subject = {
-	colonists = 2							#Added in VU - The idea here is that a colony that can govern itself is large enough to grow much faster than a crown colony
+	colonists = 1							#Added in VU - Self-Governing Colonies are colonies that heavily focus on colonisation and development growth.
 	global_colonial_growth = 50				#^
 	development_cost = -0.15
 	liberty_desire = 25

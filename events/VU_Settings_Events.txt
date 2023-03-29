@@ -1893,6 +1893,7 @@ country_event = {
 				limit = { has_province_modifier = vu_malaria_present }
 				remove_province_modifier = vu_malaria_present
 			}
+			set_global_flag = malaria_turned_off
 		}
 	}
 	

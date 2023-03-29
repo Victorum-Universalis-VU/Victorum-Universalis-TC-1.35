@@ -6,9 +6,10 @@ vu_tiny_colony = {
 	trigger = {
 		NOT = { total_development = 100 }
 	}
-	global_tax_income = 48
+	colonists = 1
 	global_colonial_growth = 25
-	liberty_desire = -100
+	liberty_desire = -50
+	global_tax_income = 48
 }
 
 vu_small_colony = {
@@ -20,9 +21,10 @@ vu_small_colony = {
 		total_development = 100
 		NOT = { total_development = 250 }
 	}
-	global_tax_income = 24
+	colonists = 1
 	global_colonial_growth = 50
-	liberty_desire = -50
+	liberty_desire = -25
+	global_tax_income = 24
 }
 
 vu_medium_colony = {
@@ -34,9 +36,9 @@ vu_medium_colony = {
 		total_development = 250
 		NOT = { total_development = 500 }
 	}
-	global_tax_income = 12
 	colonists = 1
 	global_colonial_growth = 100
+	global_tax_income = 12
 }
 
 vu_large_colony = {
@@ -48,8 +50,8 @@ vu_large_colony = {
 		total_development = 500
 		NOT = { total_development = 750 }
 	}
-	colonists = 1
-	global_colonial_growth = 200
+	colonists = 2
+	global_colonial_growth = 100
 	liberty_desire = 25
 }
 
