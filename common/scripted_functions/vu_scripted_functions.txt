@@ -1392,6 +1392,27 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {				
+				FROM = { primary_culture = english }
+				FROM = { primary_culture = scottish }
+				FROM = { primary_culture = northumbrian }
+				FROM = { primary_culture = anglo_irish }
+				FROM = { primary_culture = aussie }
+				FROM = { primary_culture = kiwi }
+				FROM = { primary_culture = cosmopolitan_french_UKS }
+				FROM = { primary_culture = gascon_UKS }
+				FROM = { primary_culture = normand_UKS }
+				FROM = { primary_culture = aquitaine_UKS }
+				FROM = { primary_culture = burgundian_UKS }
+				FROM = { primary_culture = occitain_UKS }
+				FROM = { primary_culture = arpitan_UKS }
+				FROM = { primary_culture = poitevin_UKS }
+				FROM = { primary_culture = angevin_UKS }
+				FROM = { primary_culture = lorraine_UKS }
+				FROM = { primary_culture = auvergnat_UKS }
+				FROM = { primary_culture = gallo_UKS }
+				FROM = { primary_culture = wallonian_UKS }
+				FROM = { primary_culture = breton_UKS }
+				FROM = { primary_culture = canadian }
 				FROM = { culture_group = scandinavian }
 			}
 			

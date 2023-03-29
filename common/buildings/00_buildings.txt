@@ -3274,7 +3274,7 @@ road_system = {
 	}
 
 	ai_will_do = {
-		factor = 75 #Previously 50
+		factor = 50
 		
 		### ECONOMY
 		
@@ -3284,44 +3284,46 @@ road_system = {
 			owner = { num_of_loans = 3 }
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			owner = { num_of_loans = 2 }
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			owner = { num_of_loans = 1 }
 		}
 		
 		#AI avoids building when in deficit.
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			owner = { is_in_deficit = yes }
 		}
 		
-		#AI will try to stockpile some amount of money.
+		#AI avoids building when it doesn't have a lot of money.
+		modifier = {
+			factor = 0.25
+			owner = { NOT = { treasury = 100 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { treasury = 150 } }
+		}
 		modifier = {
 			factor = 0.75
-			owner = { NOT = { treasury = 100 } }
+			owner = { NOT = { treasury = 200 } }
 		}
 		
 		### GENERAL
 		
-		#AI is encouraged to build in its capital.
+		#AI is VERY encouraged to build in its capital.
 		modifier = {
-			factor = 15
+			factor = 20
 			is_capital = yes
 		}
 		
-		#AI is encouraged to build in capital area.
+		#AI is VERY encouraged to build in capital area.
 		modifier = {
 			factor = 10
 			is_in_capital_area = yes
-		}
-		
-		#AI is encouraged to build in coastal provinces.
-		modifier = {
-			factor = 2
-			has_port = yes
 		}
 		
 		#AI is encouraged to build in provinces with primary culture.
@@ -3337,44 +3339,31 @@ road_system = {
 		}
 		modifier = {
 			factor = 4
-			development = 21 #7/7/7
-		}
-		modifier = {
-			factor = 6
 			development = 30 #10/10/10
 		}
 		modifier = {
+			factor = 6
+			development = 45 #15/15/15
+		}
+		modifier = {
 			factor = 8
-			development = 36 #12/12/12
+			development = 60 #20/20/20
 		}
 		modifier = {
 			factor = 10
-			development = 45 #15/15/15
+			development = 75 #25/25/25
 		}
 		
-		#AI is discouraged to build in provinces with unaccepted cultures.
+		#AI is discouraged to build in provinces that are not accepted cultures.
 		modifier = {
-			factor = 0.5
-			has_owner_culture = no
+			factor = 0.75
 			has_owner_accepted_culture = no
 		}
 		
 		#AI is discouraged to build in provinces with different religion.
 		modifier = {
-			factor = 0.3
+			factor = 0.75
 			has_owner_religion = no
-		}
-		
-		#AI is discouraged to build in territories.
-		modifier = {
-			factor = 0.3
-			is_state = no
-		}
-		
-		#AI is discouraged to build in overseas provinces.
-		modifier = {
-			factor = 0.1
-			is_overseas = yes
 		}
 		
 		### ADJACENT
@@ -3402,24 +3391,44 @@ road_system = {
 		#AI is encouraged to build in provinces with forts.
 		modifier = {
 			factor = 3
-			OR = {
-				has_building = fort_15th
-				has_building = fort_16th
-				has_building = fort_17th
-				has_building = fort_18th
-			}
+			has_building = fort_15th
+		}
+		modifier = {
+			factor = 6
+			has_building = fort_16th
+		}
+		modifier = {
+			factor = 9
+			has_building = fort_17th
+		}
+		modifier = {
+			factor = 12
+			has_building = fort_18th
 		}
 		
 		#AI is encouraged to build nearby forts.
 		modifier = {
 			factor = 2
 			any_neighbor_province = {
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
+				has_building = fort_15th
+			}
+		}
+		modifier = {
+			factor = 4
+			any_neighbor_province = {
+				has_building = fort_16th
+			}
+		}
+		modifier = {
+			factor = 6
+			any_neighbor_province = {
+				has_building = fort_17th
+			}
+		}
+		modifier = {
+			factor = 8
+			any_neighbor_province = {
+				has_building = fort_18th
 			}
 		}
 	}
@@ -3469,7 +3478,7 @@ canal_system = {
 	}
 
 	ai_will_do = {
-		factor = 100 #Previously 75
+		factor = 100
 		
 		### ECONOMY
 		
@@ -3479,44 +3488,46 @@ canal_system = {
 			owner = { num_of_loans = 3 }
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			owner = { num_of_loans = 2 }
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			owner = { num_of_loans = 1 }
 		}
 		
 		#AI avoids building when in deficit.
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			owner = { is_in_deficit = yes }
 		}
 		
-		#AI will try to stockpile some amount of money.
+		#AI avoids building when it doesn't have a lot of money.
+		modifier = {
+			factor = 0.25
+			owner = { NOT = { treasury = 200 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { treasury = 300 } }
+		}
 		modifier = {
 			factor = 0.75
-			owner = { NOT = { treasury = 200 } }
+			owner = { NOT = { treasury = 400 } }
 		}
 		
 		### GENERAL
 		
-		#AI is encouraged to build in its capital.
+		#AI is VERY encouraged to build in its capital.
 		modifier = {
-			factor = 15
+			factor = 20
 			is_capital = yes
 		}
 		
-		#AI is encouraged to build in capital area.
+		#AI is VERY encouraged to build in capital area.
 		modifier = {
 			factor = 10
 			is_in_capital_area = yes
-		}
-		
-		#AI is encouraged to build in coastal provinces.
-		modifier = {
-			factor = 2
-			has_port = yes
 		}
 		
 		#AI is encouraged to build in provinces with primary culture.
@@ -3532,44 +3543,31 @@ canal_system = {
 		}
 		modifier = {
 			factor = 4
-			development = 21 #7/7/7
-		}
-		modifier = {
-			factor = 6
 			development = 30 #10/10/10
 		}
 		modifier = {
+			factor = 6
+			development = 45 #15/15/15
+		}
+		modifier = {
 			factor = 8
-			development = 36 #12/12/12
+			development = 60 #20/20/20
 		}
 		modifier = {
 			factor = 10
-			development = 45 #15/15/15
+			development = 75 #25/25/25
 		}
 		
-		#AI is discouraged to build in provinces with unaccepted cultures.
+		#AI is discouraged to build in provinces that are not accepted cultures.
 		modifier = {
-			factor = 0.5
-			has_owner_culture = no
+			factor = 0.75
 			has_owner_accepted_culture = no
 		}
 		
 		#AI is discouraged to build in provinces with different religion.
 		modifier = {
-			factor = 0.3
+			factor = 0.75
 			has_owner_religion = no
-		}
-		
-		#AI is discouraged to build in territories.
-		modifier = {
-			factor = 0.3
-			is_state = no
-		}
-		
-		#AI is discouraged to build in overseas provinces.
-		modifier = {
-			factor = 0.1
-			is_overseas = yes
 		}
 		
 		### ADJACENT
@@ -3594,34 +3592,62 @@ canal_system = {
 			}
 		}
 		
-		#AI is encouraged to upgrade infrastructure buildings.
-		modifier = {
-			factor = 3
-			has_building = road_system
-		}
-		
 		#AI is encouraged to build in provinces with forts.
 		modifier = {
 			factor = 3
-			OR = {
-				has_building = fort_15th
-				has_building = fort_16th
-				has_building = fort_17th
-				has_building = fort_18th
-			}
+			has_building = fort_15th
+		}
+		modifier = {
+			factor = 6
+			has_building = fort_16th
+		}
+		modifier = {
+			factor = 9
+			has_building = fort_17th
+		}
+		modifier = {
+			factor = 12
+			has_building = fort_18th
 		}
 		
 		#AI is encouraged to build nearby forts.
 		modifier = {
 			factor = 2
 			any_neighbor_province = {
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
+				has_building = fort_15th
 			}
+		}
+		modifier = {
+			factor = 4
+			any_neighbor_province = {
+				has_building = fort_16th
+			}
+		}
+		modifier = {
+			factor = 6
+			any_neighbor_province = {
+				has_building = fort_17th
+			}
+		}
+		modifier = {
+			factor = 8
+			any_neighbor_province = {
+				has_building = fort_18th
+			}
+		}
+		
+		### UPGRADE
+		
+		#AI is encouraged to build in coastal provinces.
+		modifier = {
+			factor = 2
+			has_port = yes
+		}
+		
+		#AI is encouraged to upgrade infrastructure buildings.
+		modifier = {
+			factor = 2
+			has_building = road_system
 		}
 	}
 }
@@ -3666,7 +3692,7 @@ railway_system = {
 	}
 
 	ai_will_do = {
-		factor = 125 #Previously 100
+		factor = 150
 		
 		### ECONOMY
 		
@@ -3676,44 +3702,46 @@ railway_system = {
 			owner = { num_of_loans = 3 }
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			owner = { num_of_loans = 2 }
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			owner = { num_of_loans = 1 }
 		}
 		
 		#AI avoids building when in deficit.
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			owner = { is_in_deficit = yes }
 		}
 		
-		#AI will try to stockpile some amount of money.
+		#AI avoids building when it doesn't have a lot of money.
+		modifier = {
+			factor = 0.25
+			owner = { NOT = { treasury = 400 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { treasury = 600 } }
+		}
 		modifier = {
 			factor = 0.75
-			owner = { NOT = { treasury = 400 } }
+			owner = { NOT = { treasury = 800 } }
 		}
 		
 		### GENERAL
 		
-		#AI is encouraged to build in its capital.
+		#AI is VERY encouraged to build in its capital.
 		modifier = {
-			factor = 15
+			factor = 20
 			is_capital = yes
 		}
 		
-		#AI is encouraged to build in capital area.
+		#AI is VERY encouraged to build in capital area.
 		modifier = {
 			factor = 10
 			is_in_capital_area = yes
-		}
-		
-		#AI is encouraged to build in coastal provinces.
-		modifier = {
-			factor = 2
-			has_port = yes
 		}
 		
 		#AI is encouraged to build in provinces with primary culture.
@@ -3729,44 +3757,31 @@ railway_system = {
 		}
 		modifier = {
 			factor = 4
-			development = 21 #7/7/7
-		}
-		modifier = {
-			factor = 6
 			development = 30 #10/10/10
 		}
 		modifier = {
+			factor = 6
+			development = 45 #15/15/15
+		}
+		modifier = {
 			factor = 8
-			development = 36 #12/12/12
+			development = 60 #20/20/20
 		}
 		modifier = {
 			factor = 10
-			development = 45 #15/15/15
+			development = 75 #25/25/25
 		}
 		
-		#AI is discouraged to build in provinces with unaccepted cultures.
+		#AI is discouraged to build in provinces that are not accepted cultures.
 		modifier = {
-			factor = 0.5
-			has_owner_culture = no
+			factor = 0.75
 			has_owner_accepted_culture = no
 		}
 		
 		#AI is discouraged to build in provinces with different religion.
 		modifier = {
-			factor = 0.3
+			factor = 0.75
 			has_owner_religion = no
-		}
-		
-		#AI is discouraged to build in territories.
-		modifier = {
-			factor = 0.3
-			is_state = no
-		}
-		
-		#AI is discouraged to build in overseas provinces.
-		modifier = {
-			factor = 0.1
-			is_overseas = yes
 		}
 		
 		### ADJACENT
@@ -3791,6 +3806,58 @@ railway_system = {
 			}
 		}
 		
+		#AI is encouraged to build in provinces with forts.
+		modifier = {
+			factor = 3
+			has_building = fort_15th
+		}
+		modifier = {
+			factor = 6
+			has_building = fort_16th
+		}
+		modifier = {
+			factor = 9
+			has_building = fort_17th
+		}
+		modifier = {
+			factor = 12
+			has_building = fort_18th
+		}
+		
+		#AI is encouraged to build nearby forts.
+		modifier = {
+			factor = 2
+			any_neighbor_province = {
+				has_building = fort_15th
+			}
+		}
+		modifier = {
+			factor = 4
+			any_neighbor_province = {
+				has_building = fort_16th
+			}
+		}
+		modifier = {
+			factor = 6
+			any_neighbor_province = {
+				has_building = fort_17th
+			}
+		}
+		modifier = {
+			factor = 8
+			any_neighbor_province = {
+				has_building = fort_18th
+			}
+		}
+		
+		### UPGRADE
+		
+		#AI is encouraged to build in coastal provinces.
+		modifier = {
+			factor = 2
+			has_port = yes
+		}
+		
 		#AI is encouraged to upgrade infrastructure buildings.
 		modifier = {
 			factor = 2
@@ -3799,30 +3866,6 @@ railway_system = {
 		modifier = {
 			factor = 4
 			has_building = canal_system
-		}
-		
-		#AI is encouraged to build in provinces with forts.
-		modifier = {
-			factor = 3
-			OR = {
-				has_building = fort_15th
-				has_building = fort_16th
-				has_building = fort_17th
-				has_building = fort_18th
-			}
-		}
-		
-		#AI is encouraged to build nearby forts.
-		modifier = {
-			factor = 2
-			any_neighbor_province = {
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
-			}
 		}
 	}
 }

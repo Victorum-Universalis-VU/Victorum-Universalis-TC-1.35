@@ -1228,7 +1228,7 @@ germanic = {
 		#primary = #no tag so no seperatists
 	}
 	#VU addition - Needed for SEVU colonials
-	german_east_african = { 
+	german_east_african = {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
@@ -1252,46 +1252,64 @@ germanic = {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
-	#VU addition - Needed for VUColonialCultures
-	afrikaner = { #Africa
+	
+	# Brazil CR
+	hunsrik = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	mexikaner = { #Mexico/Central America
+	
+	# La Plata, Chile CR
+	argentiner = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	hunsrik = { #Brazil
+	
+	# Colombia, Venezuela, Ecuador CR
+	deutschkolumbian = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	seelander = { #New Zealand
+	# Cuba CR
+	kubaner = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	australier = { #Oceania
+	
+	# Mexico CR
+	mexikaner = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	pennsilfaanisch = { #North America
+	
+	# Eastern America, Mississippi, Great Lakes, Louisiana, Florida
+	pennsilfaanisch = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	argentiner = { #Argintina
+	
+	# California CR
+	kalifornier = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	neu_prussian = { #German N.American East Coast
+	
+	# Acadia, Canada, Newfoundland CR
+	neu_prussian = {	
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	deutsch_asiaten = { #German Asian
+	
+	# Alaska CR
+	alaskaner = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
 	}
-	german_indian = { #indisch
+	
+	# Cape CR
+	afrikaner = {
         graphical_culture = westerngfx
-		#primary = #no tag so no seperatists
+	}
+	
+	#Australia CR
+	a ustralier = {
+        graphical_culture = westerngfx
+	}
+	
+	# New Zealand CR
+	seelander = {
+        graphical_culture = westerngfx
 	}
 }
 
@@ -1382,10 +1400,11 @@ low_franconian = {
         graphical_culture = westerngfx
 		primary = EFR
 	}
+	
 	#Cape CR
 	afrikaner_culture = {
 		#primary = XXX
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		male_names = {
 			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend Barnaerd Bernard Bartolomeus Bartolomeus Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt Gerulf Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde Gwijde Hendrik Henry Herman Herman Hubert Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin Marquart Niclaes Nicholas Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht Robert Robert Robert Rodulf Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf Waelram Walter Walter Wicher Willem William Wolfard Hendrik Maurits Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas Roeland Rogier Thomas Vincent Zacharias
 		}
@@ -1396,17 +1415,20 @@ low_franconian = {
 			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland" "van Haspinga" "van Limburg" "von der Mark"	"van Leuven" "van Brabant" "van Egmont" "de Reginar" "De Boer" "De Verwoed"
 		}
 	}
+	
 	#Dutch Guyana CR
 	surinamer = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 	}
+	
 	#Dutch Antilles CR
 	antillianen = {
-    		graphical_culture = westerngfx
+    	graphical_culture = westerngfx
 	}
+	
 	#Dutch Eastern America CR
 	jersey_dutch = {
-			graphical_culture = westerngfx
+		graphical_culture = westerngfx
 	}
 }
 #VU addition alemannic = { #Although is Germanic, I've decided to give this culture it's own group so as to better
@@ -1595,7 +1617,8 @@ british	= {
 			Una
 		}
 	}
-	#British Eastern America, Great Lakes, Mississippi, Louisiana, Texas, California CR
+	
+	#British Eastern America, Great Lakes, Mississippi, Louisiana, California CR
 	american = {
         graphical_culture = westerngfx
 		primary = USA
@@ -1675,7 +1698,8 @@ british	= {
 			Young Yelverton Youngs
 		}
 	}
-	#British Eastern America, Great Lakes, Mississippi, Louisiana, Texas, California CR
+	
+	#British Eastern America, Mississippi, Louisiana, Texas, Florida CR
 	dixie = {
         graphical_culture = westerngfx
 		primary = USA
@@ -1755,6 +1779,7 @@ british	= {
 			Young Yelverton Youngs
 		}
 	}
+	
 	#Beyond the Pale Culture
 	northumbrian = {
 		graphical_culture = westerngfx
@@ -1829,7 +1854,7 @@ british	= {
 			Maria Matilda Mary
 		}
 	}
-	#VU - Cultures by Noobminer72
+	
 	#Australia CR
 	aussie = {
 		graphical_culture = westerngfx
@@ -1850,7 +1875,7 @@ british	= {
 			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
 		}
 	}
-	#VU - Cultures by Noobminer72
+	
 	#New Zealand CR
 	kiwi= {
 		graphical_culture = westerngfx
@@ -1871,7 +1896,7 @@ british	= {
 			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria Jacinda Helen Jenny
 		}
 	}
-	#VU - Cultures by San Felipe
+	
 	#British Antilles CR
 	british_bahamian = { #Bahamian
 		graphical_culture = westerngfx
@@ -1892,7 +1917,7 @@ british	= {
 			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
 		}
 	}
-	#VU - Cultures by San Felipe
+	
 	#British Central America CR
 	british_belizeans = { #Belizeans
 		graphical_culture = westerngfx
@@ -2012,7 +2037,7 @@ british	= {
 			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
 		}
 	}
-	#VU - Cultures by San Felipe
+	
 	#British Guyana CR
 	british_guyanese = {
 		graphical_culture = westerngfx
@@ -2033,6 +2058,7 @@ british	= {
 			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
 		}
 	}
+	
 	#British Cape CR
 	british_south_african = { #South African
 		graphical_culture = westerngfx
@@ -2185,6 +2211,8 @@ british	= {
 			Trifine Tristana Uriell Seva Perenn Meonre Ilcum Drichglur Berthildis Argantmoet
 		}
 	}
+	
+	#British Acadia, Canada, Newfoundland, Hudson Bay, Northwestern Territories, Cascadia CR
 	canadian = {
 		primary = CAN
 	}
@@ -2718,6 +2746,7 @@ iberian	= {
         graphical_culture = latingfx
 		primary = CAS
 	}
+	
 	#Iberian Mexico CR
 	mexican = {
             graphical_culture = latingfx
@@ -2750,6 +2779,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian La Plata, Chile CR
 	platinean = {
 		graphical_culture = latingfx
@@ -2782,6 +2812,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian Venezuela, Colombia, Ecuador CR
 	colombian = {
 		graphical_culture = latingfx
@@ -2814,7 +2845,8 @@ iberian	= {
 			Isabel
 		}
 	}
-	#Iberian Peru, Bolovia CR
+	
+	#Iberian Peru, Bolivia CR
 	peruvian = {
 		graphical_culture = latingfx
 		#primary = LAP
@@ -2846,6 +2878,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian Cuba CR
 	cuban = {
         graphical_culture = latingfx
@@ -2878,6 +2911,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian Hispaniola CR
 	dominican = {
         graphical_culture = latingfx
@@ -2910,6 +2944,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian Antilles CR
 	iberian_caribbean = {
         graphical_culture = latingfx
@@ -2942,6 +2977,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian Central America CR
 	centroamerican = {
         graphical_culture = latingfx
@@ -2974,6 +3010,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian Texas CR
 	tejano = {
         graphical_culture = latingfx
@@ -3006,6 +3043,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian California CR
 	californio = {
         graphical_culture = latingfx
@@ -3038,6 +3076,7 @@ iberian	= {
 			Isabel
 		}
 	}
+	
 	#Iberian Florida CR
 	floridan = {
         graphical_culture = latingfx
@@ -3126,6 +3165,7 @@ iberian	= {
 			Maria Marquesa Marquise Sança Sancha Sibila Sibylla Teresa Teresa Toda Toda Violant Yolanda
 		}
 	}
+	
 	#Iberian Brazil CR
 	brazilian = {
 		graphical_culture = latingfx
@@ -3394,31 +3434,37 @@ french	= {
 			Adalmode Adelaide Adelinde Agathe Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde Berthe Blanche Bonne Bourgogne Bourguigne Charlotte Constance Denise Douce Echive Eglantine Elisabeth Emma Ermengarde Ermessinde Esclarmonde Euphrosine Eustachie Eve Gerberge Guillaumette Helvis Hodierne Ide Ildégarde Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe Mascarose Mathilde Pernelle Perinne Pernette Plaisance Raymonde Sarrazine Sophie Sybille Tiburge Valence Yolande
 		}
 	}
+	
 	#French Mississippi, Louisiana, Great Lakes CR
 	louisianans = {
         graphical_culture = westerngfx
 		primary = LOU
 	}
-	#French Acadia, Canada CR
+	
+	#French Acadia, Canada, Newfoundland CR
 	quebecois = {
         graphical_culture = westerngfx
 		primary = QUE
 	}
+	
 	#French Hispaniola CR
 	haitian = {
         graphical_culture = westerngfx
 		#primary = QUE
 	}
+	
 	#French Guyana CR
 	french_guyanese = {
         graphical_culture = westerngfx
 		#primary = QUE
 	}
+	
 	#French Antilles CR
 	martinique = {
         graphical_culture = westerngfx
 		#primary = QUE
 	}
+	
 	#Beyond the Pale Culture
 	arpitan = {
 	    graphical_culture = westerngfx
@@ -7772,8 +7818,10 @@ iroquoian = {
 			Tyonajanegen Alliquippa Konwatsitiaienni Genessee Satékon Tekakwitha
 		}
 	}
+	#Beyond Typus Culture
 	laurentian = {
 		primary = YZG
+		graphical_culture = northamericagfx
 		dynasty_names = {
 			Awegen Ahaouet
 			Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
@@ -16115,6 +16163,7 @@ taiwanese_group = {
 septrional_creoles = {
 	graphical_culture = northamericagfx
 	metis = {
+		graphical_culture = northamericagfx
 		dynasty_names = {
 			Abenakis Abenaquis Aiken Asselin Arnott Badawey Baptise Beaulieu Belcourt Breland Bruinooge Bruneau Boucher Boyer Cadotte Cardinal Chartier Culleton Delorme Deniverville Desjarlais Dumont Etienne Fafard Flett Finlay Germain Goulet Jaune Jourdain Kaientatie Kawennaronkwas Klyne McKay Menard Micokwatokwe Mosionier Monkman Montour Morin Norquay "O'Keefe" Ouilmette Qitsualik Paquette Pitchigabow Poitras Rhéaume Riel Rivet Rocan Sayer Sibbeston Small Souchereau Supernault Tanguay Tekonwakwenni Teillet Thiboutot Vandal Vermette Wabanonik Wabikwons Wassekijik White Whiteduck Yako Zacharie
 		}
@@ -16125,7 +16174,9 @@ septrional_creoles = {
 			Andrea Audrey Beatrice Blanche Catherine Cecile Charlotte Christi Hazel Isabelle Julie Katherena Mae Margaret Marie Marie-Charlotte Sandra Sharon Roseanne Rosie-Alma Tantoo Therese Veronique
 		}
 	}
+
 	anglo_metis = {
+		graphical_culture = northamericagfx
 		dynasty_names = {
 			Austin Anderson Adams Armstrong Astor Albright Averill Ayers Arnold Armistead
 			Boone Bannister Brown Buchanan Bacon Bryant Barclay Butler Brooks Bowie Bagge Berlin Baird Baker
@@ -16173,7 +16224,9 @@ septrional_creoles = {
 			Juliana Mahaut Margaret Mary Maria Maud Matilda Philippa Sybilla Sibylla
 		}
 	}
+
 	bungi = {
+		graphical_culture = northamericagfx
 		dynasty_names = { 
 			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
 			Scott Douglas Hamilton Lindsay Ker Hay Sinclair Dunbar Kennedy

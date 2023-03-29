@@ -1546,7 +1546,7 @@ eye_of_sahara = {	#Richat Structure
 #Hard to Colonize
 vu_malaria_present = {		#ADD THIS MODIFIER TO PROVINCE, TO PREVENT EARLY COLONIZATION (LIKE INLAND AFRICA)
 	picture = "vu_malaria_icon"
-	global_colonial_growth = -100
+	local_colonial_growth = -100
 }
 
 ##################################
@@ -4729,56 +4729,6 @@ red_river_estuary_modifier = {
 }
 
 irrawaddy_estuary_modifier = {	#Split over 2 provinces
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-mahanadi_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-swarnamukhi_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-kalangi_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-kaveri_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-vaippar_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-kalundre_and_ulhas_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-tapi_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-sabarmati_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-mahi_estuary_modifier = {
-	province_trade_power_value = 5
-	picture = "estuary_icon"
-}
-
-chang_mai_estuary_modifier = {
 	province_trade_power_value = 5
 	picture = "estuary_icon"
 }
