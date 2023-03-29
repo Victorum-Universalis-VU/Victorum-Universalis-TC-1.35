@@ -4733,6 +4733,56 @@ irrawaddy_estuary_modifier = {	#Split over 2 provinces
 	picture = "estuary_icon"
 }
 
+mahanadi_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+swarnamukhi_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+kalangi_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+kaveri_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+vaippar_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+kalundre_and_ulhas_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+tapi_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+sabarmati_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+mahi_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+chang_mai_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
 kongo_estuary_modifier = {
 	province_trade_power_value = 10
 	picture = "estuary_icon"

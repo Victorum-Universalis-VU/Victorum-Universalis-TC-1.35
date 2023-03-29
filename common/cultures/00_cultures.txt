@@ -1227,6 +1227,7 @@ germanic = {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
+	
 	#VU addition - Needed for SEVU colonials
 	german_east_african = {
         graphical_culture = westerngfx
@@ -1252,62 +1253,57 @@ germanic = {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
+	deutsch_asiaten = {
+        graphical_culture = westerngfx
+		#primary = #no tag so no seperatists
+	}
 	
-	# Brazil CR
+	#VU addition - Needed for VUColonialCultures and VU_Colonial_Cultures
+	#Brazil CR
 	hunsrik = {
         graphical_culture = westerngfx
 	}
-	
-	# La Plata, Chile CR
+	#La Plata, Chile CR
 	argentiner = {
         graphical_culture = westerngfx
 	}
-	
-	# Colombia, Venezuela, Ecuador CR
+	#Colombia, Venezuela, Ecuador CR
 	deutschkolumbian = {
         graphical_culture = westerngfx
 	}
-	# Cuba CR
+	#Cuba CR
 	kubaner = {
         graphical_culture = westerngfx
 	}
-	
-	# Mexico CR
+	#Mexico CR
 	mexikaner = {
         graphical_culture = westerngfx
 	}
-	
-	# Eastern America, Mississippi, Great Lakes, Louisiana, Florida
+	#Eastern America, Mississippi, Great Lakes, Louisiana, Florida
 	pennsilfaanisch = {
         graphical_culture = westerngfx
 	}
-	
-	# California CR
+	#California CR
 	kalifornier = {
         graphical_culture = westerngfx
 	}
-	
-	# Acadia, Canada, Newfoundland CR
+	#Acadia, Canada, Newfoundland CR
 	neu_prussian = {	
         graphical_culture = westerngfx
 	}
-	
-	# Alaska CR
+	#Alaska CR
 	alaskaner = {
         graphical_culture = westerngfx
 	}
-	
-	# Cape CR
+	#Cape CR
 	afrikaner = {
         graphical_culture = westerngfx
 	}
-	
 	#Australia CR
-	a ustralier = {
+	australier = {
         graphical_culture = westerngfx
 	}
-	
-	# New Zealand CR
+	#New Zealand CR
 	seelander = {
         graphical_culture = westerngfx
 	}

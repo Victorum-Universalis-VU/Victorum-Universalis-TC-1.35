@@ -3300,16 +3300,8 @@ road_system = {
 		
 		#AI avoids building when it doesn't have a lot of money.
 		modifier = {
-			factor = 0.25
-			owner = { NOT = { treasury = 100 } }
-		}
-		modifier = {
 			factor = 0.5
-			owner = { NOT = { treasury = 150 } }
-		}
-		modifier = {
-			factor = 0.75
-			owner = { NOT = { treasury = 200 } }
+			owner = { NOT = { treasury = 100 } }
 		}
 		
 		### GENERAL
@@ -3504,16 +3496,8 @@ canal_system = {
 		
 		#AI avoids building when it doesn't have a lot of money.
 		modifier = {
-			factor = 0.25
-			owner = { NOT = { treasury = 200 } }
-		}
-		modifier = {
 			factor = 0.5
-			owner = { NOT = { treasury = 300 } }
-		}
-		modifier = {
-			factor = 0.75
-			owner = { NOT = { treasury = 400 } }
+			owner = { NOT = { treasury = 200 } }
 		}
 		
 		### GENERAL
@@ -3530,6 +3514,11 @@ canal_system = {
 			is_in_capital_area = yes
 		}
 		
+		#AI is encouraged to build in coastal provinces.
+		modifier = {
+			factor = 2
+			has_port = yes
+		}
 		#AI is encouraged to build in provinces with primary culture.
 		modifier = {
 			factor = 3
@@ -3718,16 +3707,8 @@ railway_system = {
 		
 		#AI avoids building when it doesn't have a lot of money.
 		modifier = {
-			factor = 0.25
-			owner = { NOT = { treasury = 400 } }
-		}
-		modifier = {
 			factor = 0.5
-			owner = { NOT = { treasury = 600 } }
-		}
-		modifier = {
-			factor = 0.75
-			owner = { NOT = { treasury = 800 } }
+			owner = { NOT = { treasury = 400 } }
 		}
 		
 		### GENERAL
